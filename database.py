@@ -15,3 +15,10 @@ def create_database():
     conn.commit()
     conn.close()
 def print_databse()
+def create_user():
+    conn = sqlite3.connect('mydatabase.db')
+    c = conn.cursor()
+    c.execute("INSERT INTO users (name, age) VALUES (?, ?)", ('Alice', 30))
+
+    conn.commit()
+    conn.close()
