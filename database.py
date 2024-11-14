@@ -74,3 +74,4 @@ def create_database(database_name):
     conn.close()
 
     print(f"SQLite database named {database_name} created successfully".format(database_name))
+    python.py
